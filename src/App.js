@@ -9,7 +9,6 @@ function App() {
   <div>
   
     
-    
     <Router>
     <Link to='/' className='app1'>Slides</Link>
     <Link to='/List' className='app2'> List</Link>

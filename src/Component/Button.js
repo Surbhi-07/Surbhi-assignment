@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Button extends Component {
-  render() {
-    return (
-      <div>
-      <button onClick={()=>alert("You clicked on button1")}>Button1</button>
-      <button onClick={()=>alert("You clicked on button2")}>Button2</button>
-      <button onClick={()=>alert("You clicked on button3")}>Button3</button>
-      </div>
-    )
+export default function Button() {
+
+  const handleClick = (e)=>{
+    alert("you clicked "+e.target.innerHTML)
   }
+  return (
+    <div>
+      <button onClick={handleClick}>button1
+      
+      </button>
+      <button onClick={handleClick}>button2
+      
+      </button> 
+      <button onClick={handleClick}>button3
+     
+      </button>
+    </div>
+  )
 }
